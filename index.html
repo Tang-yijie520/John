@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simply Rugby Club - Online Help</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background-color: #f3f4f6;
+        }
+        header {
+            background-color: #1E3A8A;
+            color: white;
+            padding: 20px 40px;
+        }
+        header h1 { margin: 0; }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        nav {
+            width: 240px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-right: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            height: fit-content;
+        }
+        nav a {
+            display: block;
+            padding: 8px 12px;
+            margin: 4px 0;
+            color: #1E3A8A;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        nav a:hover { background-color: #E5E7EB; }
+        main {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #1E3A8A;
+            border-bottom: 2px solid #1E3A8A;
+            padding-bottom: 8px;
+        }
+        .step {
+            background: #F9FAFB;
+            border-left: 4px solid #1E3A8A;
+            padding: 12px 16px;
+            margin: 12px 0;
+        }
+        code {
+            background: #E5E7EB;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #6B7280;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Simply Rugby Club - Online Help</h1>
+        <p>User guide for the club management system</p>
+    </header>
+
+    <div class="container">
+        <nav>
+            <strong>Contents</strong>
+            <a href="#getting-started">Getting Started</a>
+            <a href="#login">Login</a>
+            <a href="#members">Managing Members</a>
+            <a href="#squads">Managing Squads</a>
+            <a href="#matches">Recording Matches</a>
+            <a href="#skills">Skill Assessment</a>
+            <a href="#profile">Training Profile</a>
+            <a href="#users">User Management</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+
+        <main>
+            <section id="getting-started">
+                <h2>Getting Started</h2>
+                <p>Welcome to Simply Rugby Club Management System. This guide will help you use the main features of the application.</p>
+                <div class="step">
+                    <strong>Default admin account:</strong><br>
+                    Username: <code>admin</code><br>
+                    Password: <code>123456</code><br>
+                    (Please change the password after first login)
+                </div>
+            </section>
+
+            <section id="login">
+                <h2>Login</h2>
+                <ol>
+                    <li>Launch the Simply Rugby Club application.</li>
+                    <li>Enter your username and password.</li>
+                    <li>Click the <strong>Login</strong> button.</li>
+                    <li>If successful, you will be taken to the main menu.</li>
+                </ol>
+                <p>If you enter an invalid username or password, a warning message will be displayed.</p>
+            </section>
+
+            <section id="members">
+                <h2>Managing Members</h2>
+                <p>Club members (players) can be added, edited, and deleted from the Members window.</p>
+                <div class="step"><strong>To add a new member:</strong> Click <em>Members</em> → <em>Add New</em>, fill in the details, then click <em>Save</em>.</div>
+                <div class="step"><strong>To edit a member:</strong> Select a member in the list, click <em>Edit</em>, update the details, and click <em>Save</em>.</div>
+                <div class="step"><strong>To delete a member:</strong> Select a member and click <em>Delete</em>. A confirmation message will appear.</div>
+                <div class="step"><strong>To search:</strong> Type a name or SRU number in the search box.</div>
+            </section>
+
+            <section id="squads">
+                <h2>Managing Squads</h2>
+                <p>Squads organise players into teams for a particular season and age grade.</p>
+                <div class="step"><strong>Create a squad:</strong> Enter squad name, select age grade, enter season, then click <em>Create</em>.</div>
+                <div class="step"><strong>Add a player to a squad:</strong> Select a squad and an available player, then click <em>Add →</em>.</div>
+                <div class="step"><strong>Remove a player:</strong> Select a player in the squad and click <em>← Remove</em>.</div>
+                <div class="step"><strong>Delete a squad:</strong> Select the squad and click <em>Delete Selected</em>. Players are automatically unassigned.</div>
+            </section>
+
+            <section id="matches">
+                <h2>Recording Matches</h2>
+                <ol>
+                    <li>Open the <strong>Matches</strong> window from the main menu.</li>
+                    <li>Select the squad that played the match.</li>
+                    <li>Enter the date, opponent, venue, home score and away score.</li>
+                    <li>Click <strong>Save Match</strong>.</li>
+                </ol>
+                <p>Match results (Win, Loss or Draw) are calculated automatically. Select a match and click <em>Delete Selected Match</em> to remove it.</p>
+            </section>
+
+            <section id="skills">
+                <h2>Skill Assessment</h2>
+                <p>Coaches can record skill assessments for each player on a 1–5 scale.</p>
+                <ol>
+                    <li>Open the <strong>Skill Assessment</strong> window.</li>
+                    <li>Select a player and the assessment date.</li>
+                    <li>Use the sliders to score Passing, Tackling, Kicking, Running with Ball, and Teamwork.</li>
+                    <li>Add optional comments and click <strong>Save Assessment</strong>.</li>
+                </ol>
+                <p>The player's training profile averages will be updated automatically.</p>
+            </section>
+
+            <section id="profile">
+                <h2>Training Profile</h2>
+                <p>The Training Profile window shows a summary of a player's progress.</p>
+                <ul>
+                    <li>Select a player from the dropdown.</li>
+                    <li>View their average skill scores and matches played.</li>
+                    <li>The assessment history is displayed in a table.</li>
+                </ul>
+            </section>
+
+            <section id="users">
+                <h2>User Management (Admin only)</h2>
+                <p>Administrators can create new user accounts, reset passwords, and deactivate users.</p>
+                <div class="step"><strong>Create a user:</strong> Enter username, password, email, role, and click <em>Create</em>.</div>
+                <div class="step"><strong>Reset password:</strong> Select a user, type a new password, then click <em>Reset Password</em>.</div>
+                <div class="step"><strong>Deactivate a user:</strong> Select the user and click <em>Deactivate User</em>.</div>
+            </section>
+
+            <section id="faq">
+                <h2>Frequently Asked Questions</h2>
+                <p><strong>Q: I forgot my password. What should I do?</strong><br>
+                A: Ask the administrator to reset your password from the User Management window.</p>
+                <p><strong>Q: Why can't I access User Management?</strong><br>
+                A: Only users with the Admin role can open the User Management window.</p>
+                <p><strong>Q: Can I delete a match by mistake?</strong><br>
+                A: The system will always ask for confirmation before deleting a record.</p>
+                <p><strong>Q: Where is the data stored?</strong><br>
+                A: All data is stored locally in a SQLite database file (<code>simplyrugby.db</code>).</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        © 2026 Simply Rugby Club Management System
+    </footer>
+</body>
+</html>
